@@ -42,7 +42,7 @@ const translations = {
 };
 
 const replaceCurlyBraces = () => {
-  const iframe = document.getElementByName("engagebay-messenger-frame");
+  const iframe = document.getElementsByTagName("engagebay-messenger-frame");
   const isoLang = getBrowserLang();
   const useLang = convertBrowserLang(isoLang.toLocaleLowerCase());
   const values = translations[useLang];
